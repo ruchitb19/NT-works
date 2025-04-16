@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT Works | IT Services & Consulting</title>
+    <link rel="stylesheet" href="/public/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {}
+            }
+        }
+
+    </script>
+</head>
+
+<body class="scroll-smooth bg-black">
+    <div id="HOME">
+        <div class="video-docker absolute inset-0 w-full h-full overflow-hidden">
+            <video class="w-full h-full object-cover" autoplay muted loop>
+                <!-- <source src="https://videos.pexels.com/video-files/852421/852421-hd_1920_1080_30fps.mp4"
+                    type="video/mp4"> -->
+            </video>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar"
+            class="fixed top-0 left-0 w-full bg-opacity-100 z-50 shadow-lg transition-all duration-300 bg-opacity-80, backdrop-blur-md">
+            <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+                <!-- Logo -->
+                <a href="#HOME" class="text-2xl md:text-3xl font-bold text-black hover:text-gray-300">
+                    NT Works
+                </a>
+
+                <ul class="hidden md:flex space-x-6 text-white text-lg">
+                    <li><a href="#HOME" class="hover:text-yellow-400 transition">HOME</a></li>
+                    <li><a href="#ABOUT" class="hover:text-yellow-400 transition">ABOUT</a></li>
+                    <li class="relative group">
+                        <button class="hover:text-yellow-400 flex items-center">
+                            SERVICES
+                        </button>
+                        <ul
+                            class="absolute hidden bg-black bg-opacity-80 text-white py-2 rounded-lg shadow-lg w-64 group-hover:block">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; Software Development</a>
+                            </li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; Server Deployment &
+                                    Management</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; Cybersecurity &
+                                    Compliance</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; IT Consulting</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; Maintenance & Support</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#MISSION" class="hover:text-yellow-400 transition">MISSION</a></li>
+                    <li><a href="#MISSION" class="hover:text-yellow-400 transition">CAREERS</a></li>
+                    <li><a href="#CONTACT" class="hover:text-yellow-400 transition">CONTACT</a></li>
+                </ul>
+
+                <button id="menu-toggle" class="md:hidden text-black text-2xl">☰</button>
+            </div>
+
+            <ul id="mobile-menu" class="hidden flex flex-col bg-black text-white py-3 space-y-3 text-lg md:hidden">
+                <li><a href="#HOME" class="block px-6 py-2 hover:text-yellow-400">HOME</a></li>
+                <li><a href="#ABOUT" class="block px-6 py-2 hover:text-yellow-400">ABOUT</a></li>
+                <li>
+                    <button id="mobile-dropdown-toggle"
+                        class="flex justify-between items-center w-full px-6 py-2 hover:text-yellow-400">
+                        SERVICES
+                    </button>
+                    <ul id="mobile-dropdown" class="hidden ">
+                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; Software Development</a>
+                        </li>
+                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; Server Deployment &
+                                Management</a></li>
+                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; Cybersecurity &
+                                Compliance</a></li>
+                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; IT Consulting</a></li>
+                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; Maintenance & Support </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#MISSION" class="block px-6 py-2 hover:text-yellow-400">MISSION</a></li>
+                <li><a href="#MISSION" class="block px-6 py-2 hover:text-yellow-400">CAREERS</a></li>
+                <li><a href="#CONTACT" class="block px-6 py-2 hover:text-yellow-400">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <section class="h-screen flex flex-col items-center justify-center text-center text-white px-6">
+            <div class="relative space-y-5 w-full mt-10">
+                <div class="flex justify-center">
+                    <div class="flex flex-col md:flex-row gap-4 group max-w-fit mx-auto">
+                        <a href="https://api.whatsapp.com/send?phone=917045560589&text=Hello%21%20I%27m%20interested%20in%20your%20services."
+                            class="text-white bg-blue-800 hover:bg-yellow-600 font-bold rounded-lg px-6 py-3 transition float-btn group-hover:bg-yellow-600"
+                            id="scheduleBtn" target="_blank" rel="noopener noreferrer">
+                            SCHEDULE A MEETING
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bhosleruchit19@gmail.com&su=Free%20Consultation%20Request&body=Hello,%0D%0A%0D%0AI would like to request a free consultation session.%0D%0A%0D%0APlease let me know the available time slots.%0D%0A%0D%0AThank you!"
+                            target="_blank"
+                            class="text-white bg-yellow-600 hover:bg-blue-800 font-bold rounded-lg px-6 py-3 transition group-hover:bg-blue-800 float-btn-2"
+                            id="consultBtn">
+                            GET A FREE CONSULTATION
+                        </a>
+
+                    </div>
+                </div>
+                <h1 id="typed-text" class="text-2xl md:text-4xl font-bold py-3 min-h-[90px] md:min-h-[65px]"></h1>
+            </div>
+        </section>
+    </div>
+
+    <!-- <div data-aos="zoom-in-down" data-aos-easing="linear" data-aos-duration="1500"> -->
+    <section id="ABOUT" class="about flex flex-col items-center py-20 bg-[#f8f5e6]">
+        <h2 class="text-4xl font-serif font-bold text-luxury-navy mb-3">WHO WE ARE</h2>
+        <div class="w-24 h-1 bg-[#d4af37] mb-10"></div>
+        <div class="max-w-3xl text-center">
+            <p class="mb-6 px-8 text-lg leading-relaxed">
+                <span class="font-semibold">NT-works</span>,is a forward-thinking IT services firm committed to building
+                technology solutions that are robust, reliable, and future-ready. Founded with a passion for solving
+                complex digital problems, our team brings together years of hands-on experience in software development,
+                server administration, and enterprise-grade deployments.
+            </p>
+            <!-- <p class="px-8 text-lg leading-relaxed"></p>      if more information is to be added -->
+        </div>
+    </section>
+
+    <section id="SERVICES" class="about flex flex-col items-center py-20 bg-white">
+        <h2 class="text-4xl font-serif font-bold text-luxury-navy mb-3">SERVICES WE PROVIDE</h2>
+        <div class="w-24 h-1 bg-[#d4af37] mb-10"></div>
+        <div class="max-w-3xl text-center">
+            <p class="mb-6 px-8 text-lg leading-relaxed">
+                &rarr; Software Development <br>
+                &rarr; Server Deployment & Management <br>
+                &rarr; Cybersecurity & Compliance <br>
+                &rarr; IT Consulting <br>
+                &rarr; Maintenance & Support
+            </p>
+            <!-- <p class="px-8 text-lg leading-relaxed"></p>      if more information is to be added -->
+        </div>
+    </section>
+
+    <!-- <div data-aos="zoom-in-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> -->
+    <section id="MISSION" class="about bg-[#f8f5e6] flex flex-col md:flex-row justify-center items-stretch">
+        <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-luxury-navy mb-3">MISSION</h2>
+            <div class="w-20 md:w-24 h-1 bg-[#d4af37] mb-6 md:mb-10"></div>
+            <div class="max-w-3xl text-center">
+                <p class="mb-6 px-2 md:px-12 text-base md:text-lg leading-relaxed">
+                    Our mission is to simplify technology for our clients by delivering intelligent, secure, and
+                    scalable solutions that not only support their current needs but also empower future growth. We are
+                    committed to creating seamless digital experiences that drive operational excellence, improve
+                    efficiency, and foster innovation—helping businesses navigate complexity with confidence and
+                    clarity.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-luxury-navy mb-3">WHY CHOOSE US</h2>
+            <div class="w-20 md:w-24 h-1 bg-[#d4af37] mb-6 md:mb-10"></div>
+            <div class="max-w-3xl text-center">
+                <p class="mb-6 px-2 md:px-8 text-base md:text-lg leading-relaxed">
+                    • Proven Expertise Across Technologies <br>
+                    • Personalized, Client-First Approach <br>
+                    • Scalable Solutions for Every Business Size <br>
+                    • Transparent Communication and Long-Term Support
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="CAREERS" class="about bg-white flex flex-col md:flex-row justify-center items-stretch">
+        <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-luxury-navy mb-3 text-center">Join the NT Works
+                Team
+            </h2>
+            <div class="w-20 md:w-24 h-1 bg-[#d4af37] mb-6 md:mb-10"></div>
+            <div class="max-w-3xl text-center">
+                <p class="mb-6 px-2 md:px-8 text-base md:text-lg leading-relaxed">
+                    We’re always looking for curious minds, passionate coders, and tech problem-solvers. If you're eager
+                    to
+                    learn, grow, and make a difference in the tech world, we'd love to hear from you.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
+            <div class="max-w-3xl text-center">
+                <p class="mb-6 px-2 md:px-8 text-base md:text-lg leading-relaxed max-w-3xl text-center">
+                    <strong>Current Openings:</strong><br>
+                    Intern – Web Development &amp; Dynamic Content<br>
+                    Junior Java Developer (Coming soon)
+                </p>
+                <form action="/upload" method="POST" enctype="multipart/form-data"
+                    class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md w-full max-w-md mt-6 md:mt-10">
+                    <h3 class="text-lg md:text-xl font-semibold mb-4 text-center">Submit Your Resume</h3>
+
+                    <label class="mb-2 text-sm text-gray-700">Choose your resume file:</label>
+
+                    <input type="file" id="resumeFile" name="resume" required class="mb-4 block w-full text-sm text-gray-500  
+                           file:mr-4 file:py-2 file:px-4
+                           file:rounded-full file:border-0
+                           file:text-sm file:font-semibold
+                           file:bg-blue-50 file:text-blue-700
+                           hover:file:bg-blue-100" />
+
+                    <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition duration-300">
+                        Upload
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"> -->
+    <section id="CONTACT" class="bg-[#f8f5e6] text-black py-16 px-6 text-center">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold mb-6">Contact Us</h2>
+            <p class="text-lg md:text-xl mb-6">Let’s Build Something Great Together!</p>
+            <form id="contactForm" class="max-w-lg mx-auto bg-[#f8f5e6] p-6 rounded-lg">
+                <input type="text" id="name" placeholder="Full Name"
+                    class="w-full p-2 rounded bg-white text-black border mb-4" required autocomplete="additional-name">
+                <input type="email" id="email" placeholder="Email"
+                    class="w-full p-2 rounded bg-white text-black border mb-4" required autocomplete="additional-name">
+                <textarea id="message" placeholder="Message" class="w-full p-2 rounded bg-white text-black border mb-4"
+                    rows="4" required></textarea>
+                <button type="submit"
+                    class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+                    Send Message
+                </button>
+            </form>
+            <p id="statusMessage" class="mt-4 text-green-500 hidden">Message sent successfully!</p>
+        </div>
+    </section>
+    </div>
+
+
+    <!-- Cookie Consent Popup -->
+    <div id="cookiePopup"
+        class="fixed bottom-5 left-5 right-5 md:left-auto md:right-10 bg-gray-800 text-white p-4 rounded-lg shadow-lg max-w-sm flex flex-col md:flex-row items-center justify-between hidden">
+
+        <p class="text-sm">We use cookies 🍪 to improve your experience. By using our site, you agree to our <a href="#"
+                class="underline text-blue-400">Privacy Policy</a>.</p>
+
+        <button onclick="acceptCookies()"
+            class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold py-2 px-4 rounded-lg ml-4 mt-2 md:mt-0">
+            Accept
+        </button>
+    </div>
+
+
+    <!-- <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="3000"> -->
+    <footer class="bg-luxury-navy text-white text-center py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:justify-between md:text-left text-center gap-8 md:gap-16">
+
+                <div class="md:w-1/4">
+                    <h2 class="text-2xl mb-3 font-semibold">NT Works</h2>
+                    <p>
+                        500 Terry Francine Street,<br>
+                        San Francisco, CA 94158<br>
+                        Mail: info@mysite.com<br>
+                        Tel: 123-456-7890
+                    </p>
+                </div>
+
+                <div class="md:w-1/6">
+                    <h2 class="text-2xl mb-3 font-semibold">Menu</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#HOME" class="hover:text-gray-400">HOME</a></li>
+                        <li><a href="#ABOUT" class="hover:text-gray-400">ABOUT</a></li>
+                        <li><a href="#CONTACT" class="hover:text-gray-400">CONTACT</a></li>
+                        <li><a href="#" class="hover:text-gray-400">ABC</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/6">
+                    <h2 class="text-2xl mb-3 font-semibold">Quick Links</h2>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-400">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-gray-400">Support</a></li>
+                        <li><a href="#" class="hover:text-gray-400">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="md:w-1/4">
+                    <h2 class="text-2xl mb-3 font-semibold">Get Started With Us</h2>
+                    <form id="subscribeForm" class="space-y-4">
+                        <input type="email" id="subscribeEmail" placeholder="Enter your email"
+                            class="w-full p-2 rounded bg-gray-700 text-white border focus:outline-none" required>
+                        <button type="submit"
+                            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p id="subscribeMessage" class="mt-2 text-green-500 hidden"></p>
+                </div>
+            </div>
+
+            <hr class="h-1 w-4/5 mx-auto my-8 bg-white border-0">
+            <p class="text-sm">&copy; 2025 NT Works. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+
+    <div id="chatIcon"
+        class="fixed bottom-5 right-5 w-12 h-12 bg-blue-600 text-white flex items-center justify-center rounded-full shadow-lg cursor-pointer">
+        ⬜
+    </div>
+
+    <div id="chatContainer"
+        class="fixed bottom-5 right-20 w-64 bg-white shadow-lg rounded-lg overflow-hidden border border-gray-300 hidden z-10">
+        <div class="bg-blue-600 text-white text-center py-2">Chatbot</div>
+        <div id="chatbox" class="p-3 h-48 overflow-y-auto text-sm"></div>
+        <div class="flex border-t border-gray-200">
+            <input id="userInput" type="text" class="w-full p-2 text-sm border-none focus:ring-0"
+                placeholder="Type a message...">
+            <button id="sendBtn" class="bg-blue-600 text-white px-3">Send</button>
+        </div>
+    </div>
+    
+</body>
+
+</html>
