@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NT Works | IT Services & Consulting</title>
     <link rel="stylesheet" href="/public/style.css">
+    
+    <!-- AOS CSS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS JS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -25,14 +31,14 @@
     <div id="HOME">
         <div class="video-docker absolute inset-0 w-full h-full overflow-hidden">
             <video class="w-full h-full object-cover" autoplay muted loop>
-                <!-- <source src="https://videos.pexels.com/video-files/852421/852421-hd_1920_1080_30fps.mp4"
-                    type="video/mp4"> -->
+                <source src="https://videos.pexels.com/video-files/852421/852421-hd_1920_1080_30fps.mp4"
+                    type="video/mp4">
             </video>
         </div>
 
         <!-- Navigation Bar -->
         <nav id="navbar"
-            class="fixed top-0 left-0 w-full bg-opacity-100 z-50 shadow-lg transition-all duration-300 bg-opacity-80, backdrop-blur-md">
+            class="fixed top-0 left-0 w-full bg-slate-900 bg-opacity-80 z-50 shadow-lg backdrop-blur-md transition-all duration-300">
             <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
                 <!-- Logo -->
                 <a href="#HOME" class="text-2xl md:text-3xl font-bold text-black hover:text-gray-300">
@@ -48,19 +54,19 @@
                         </button>
                         <ul
                             class="absolute hidden bg-black bg-opacity-80 text-white py-2 rounded-lg shadow-lg w-64 group-hover:block">
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; Software Development</a>
+                            <li><a href="#SERVICES" class="block px-4 py-2 hover:bg-gray-700">&rarr; Software Development</a>
                             </li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; Server Deployment &
+                            <li><a href="#SERVICES" class="block px-4 py-2 hover:bg-gray-700">&rarr; Server Deployment &
                                     Management</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; Cybersecurity &
+                            <li><a href="#SERVICES" class="block px-4 py-2 hover:bg-gray-700">&rarr; Cybersecurity &
                                     Compliance</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; IT Consulting</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-gray-700">&rarr; Maintenance & Support</a>
+                            <li><a href="#SERVICES" class="block px-4 py-2 hover:bg-gray-700">&rarr; IT Consulting</a></li>
+                            <li><a href="#SERVICES" class="block px-4 py-2 hover:bg-gray-700">&rarr; Maintenance & Support</a>
                             </li>
                         </ul>
                     </li>
                     <li><a href="#MISSION" class="hover:text-yellow-400 transition">MISSION</a></li>
-                    <li><a href="#MISSION" class="hover:text-yellow-400 transition">CAREERS</a></li>
+                    <li><a href="#CAREER" class="hover:text-yellow-400 transition">CAREERS</a></li>
                     <li><a href="#CONTACT" class="hover:text-yellow-400 transition">CONTACT</a></li>
                 </ul>
 
@@ -76,19 +82,19 @@
                         SERVICES
                     </button>
                     <ul id="mobile-dropdown" class="hidden ">
-                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; Software Development</a>
+                        <li><a href="#SERVICES" class="block px-6 py-2 hover:text-yellow-400">&rarr; Software Development</a>
                         </li>
-                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; Server Deployment &
+                        <li><a href="#SERVICES" class="block px-6 py-2 hover:text-yellow-400">&rarr; Server Deployment &
                                 Management</a></li>
-                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; Cybersecurity &
+                        <li><a href="#SERVICES" class="block px-6 py-2 hover:text-yellow-400">&rarr; Cybersecurity &
                                 Compliance</a></li>
-                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; IT Consulting</a></li>
-                        <li><a href="#" class="block px-6 py-2 hover:text-yellow-400">&rarr; Maintenance & Support </a>
+                        <li><a href="#SERVICES" class="block px-6 py-2 hover:text-yellow-400">&rarr; IT Consulting</a></li>
+                        <li><a href="#SERVICES" class="block px-6 py-2 hover:text-yellow-400">&rarr; Maintenance & Support </a>
                         </li>
                     </ul>
                 </li>
                 <li><a href="#MISSION" class="block px-6 py-2 hover:text-yellow-400">MISSION</a></li>
-                <li><a href="#MISSION" class="block px-6 py-2 hover:text-yellow-400">CAREERS</a></li>
+                <li><a href="#CAREER" class="block px-6 py-2 hover:text-yellow-400">CAREERS</a></li>
                 <li><a href="#CONTACT" class="block px-6 py-2 hover:text-yellow-400">CONTACT</a></li>
             </ul>
         </nav>
@@ -131,18 +137,57 @@
         </div>
     </section>
 
-    <section id="SERVICES" class="about flex flex-col items-center py-20 bg-white">
+    <section id="SERVICES" class="flex flex-col items-center bg-white py-16 px-6">
         <h2 class="text-4xl font-serif font-bold text-luxury-navy mb-3">SERVICES WE PROVIDE</h2>
         <div class="w-24 h-1 bg-[#d4af37] mb-10"></div>
-        <div class="max-w-3xl text-center">
-            <p class="mb-6 px-8 text-lg leading-relaxed">
-                &rarr; Software Development <br>
-                &rarr; Server Deployment & Management <br>
-                &rarr; Cybersecurity & Compliance <br>
-                &rarr; IT Consulting <br>
-                &rarr; Maintenance & Support
-            </p>
-            <!-- <p class="px-8 text-lg leading-relaxed"></p>      if more information is to be added -->
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+            <!-- Service Box 1 -->
+            <div class="bg-[#f8f5e6] shadow-lg rounded-xl p-6 hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-[#0c2340] mb-2">→ Software Development</h3>
+                <p class="text-gray-700">
+                    Custom Java applications, web apps, and mobile-friendly solutions built with performance and
+                    security in mind.
+                </p>
+            </div>
+
+            <!-- Service Box 2 -->
+            <div class="bg-[#f8f5e6] shadow-lg rounded-xl p-6 hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-[#0c2340] mb-2">→ Server Deployment & Management</h3>
+                <p class="text-gray-700">
+                    Specializing in Tomcat, Apache, and RHEL environments, including WAR file deployment, SSL
+                    configuration, and troubleshooting.
+                </p>
+            </div>
+
+            <!-- Service Box 3 -->
+            <div class="bg-[#f8f5e6] shadow-lg rounded-xl p-6 hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-[#0c2340] mb-2">→ Cybersecurity & Compliance</h3>
+                <p class="text-gray-700">
+                    We help fix vulnerabilities, secure your server infrastructure, and implement industry-standard best
+                    practices.
+                </p>
+            </div>
+
+            <!-- Service Box 4 -->
+            <div class="bg-[#f8f5e6] shadow-lg rounded-xl p-6 hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-[#0c2340] mb-2">→ IT Consulting</h3>
+                <p class="text-gray-700">
+                    From architecture planning to digital transformation strategy, we guide businesses at every tech
+                    crossroad.
+                </p>
+            </div>
+
+            <!-- Service Box 5 -->
+            <div class="bg-[#f8f5e6] shadow-lg rounded-xl p-6 hover:shadow-xl transition duration-300">
+                <h3 class="text-xl font-semibold text-[#0c2340] mb-2">→ Maintenance & Support</h3>
+                <p class="text-gray-700">
+                    Ongoing monitoring, bug fixes, system updates, and technical support so you can focus on your
+                    business.
+                </p>
+            </div>
+
         </div>
     </section>
 
@@ -177,7 +222,7 @@
     </section>
 
 
-    <section id="CAREERS" class="about bg-white flex flex-col md:flex-row justify-center items-stretch">
+    <section id="CAREER" class="about bg-white flex flex-col md:flex-row justify-center items-stretch">
         <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
             <h2 class="text-3xl md:text-4xl font-serif font-bold text-luxury-navy mb-3 text-center">Join the NT Works
                 Team
