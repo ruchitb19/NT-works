@@ -126,12 +126,15 @@
     <section id="ABOUT" class="about flex flex-col items-center py-20 bg-[#f8f5e6]">
         <h2 class="text-4xl font-serif font-bold text-luxury-navy mb-3">WHO WE ARE</h2>
         <div class="w-24 h-1 bg-[#d4af37] mb-10"></div>
-        <div class="max-w-3xl text-center">
+        <div class="max-w-6xl text-center text-justify">
             <p class="mb-6 px-8 text-lg leading-relaxed">
-                <span class="font-semibold">NT-works</span>,is a forward-thinking IT services firm committed to building
-                technology solutions that are robust, reliable, and future-ready. Founded with a passion for solving
-                complex digital problems, our team brings together years of hands-on experience in software development,
-                server administration, and enterprise-grade deployments.
+                <span class="font-semibold">NT-works</span>, is a modern IT services firm focused on building
+                robust, reliable, and future-ready technology solutions. Driven by a passion for solving complex digital
+                problems, our team brings deep expertise in software development, server administration, and
+                enterprise-grade deployments.
+                <br>
+                We partner with clients to design, build, and scale solutions that meet real-world challenges—delivering
+                performance, security, and long-term value every step of the way.
             </p>
             <!-- <p class="px-8 text-lg leading-relaxed"></p>      if more information is to be added -->
         </div>
@@ -141,7 +144,7 @@
         <h2 class="text-4xl font-serif font-bold text-luxury-navy mb-3">SERVICES WE PROVIDE</h2>
         <div class="w-24 h-1 bg-[#d4af37] mb-10"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
 
             <!-- Service Box 1 -->
             <div class="bg-[#f8f5e6] shadow-lg rounded-xl p-6 hover:shadow-xl transition duration-300">
@@ -196,8 +199,8 @@
         <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
             <h2 class="text-3xl md:text-4xl font-serif font-bold text-luxury-navy mb-3">MISSION</h2>
             <div class="w-20 md:w-24 h-1 bg-[#d4af37] mb-6 md:mb-10"></div>
-            <div class="max-w-3xl text-center">
-                <p class="mb-6 px-2 md:px-12 text-base md:text-lg leading-relaxed">
+            <div class="max-w-3xl text-center text-justify">
+                <p class="mb-6 px-2 md:px-8 text-base md:text-lg leading-relaxed">
                     Our mission is to simplify technology for our clients by delivering intelligent, secure, and
                     scalable solutions that not only support their current needs but also empower future growth. We are
                     committed to creating seamless digital experiences that drive operational excellence, improve
@@ -210,7 +213,7 @@
         <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
             <h2 class="text-3xl md:text-4xl font-serif font-bold text-luxury-navy mb-3">WHY CHOOSE US</h2>
             <div class="w-20 md:w-24 h-1 bg-[#d4af37] mb-6 md:mb-10"></div>
-            <div class="max-w-3xl text-center">
+            <div class="max-w-3xl text-center text-justify">
                 <p class="mb-6 px-2 md:px-8 text-base md:text-lg leading-relaxed">
                     • Proven Expertise Across Technologies <br>
                     • Personalized, Client-First Approach <br>
@@ -222,29 +225,31 @@
     </section>
 
 
-    <section id="CAREER" class="about bg-white flex flex-col md:flex-row justify-center items-stretch">
+    <section id="CAREER" class="bg-white flex flex-col md:flex-row justify-center items-stretch">
         <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
             <h2 class="text-3xl md:text-4xl font-serif font-bold text-luxury-navy mb-3 text-center">Join the NT Works
                 Team
             </h2>
             <div class="w-20 md:w-24 h-1 bg-[#d4af37] mb-6 md:mb-10"></div>
-            <div class="max-w-3xl text-center">
+            <div class="max-w-3xl text-center text-justify">
                 <p class="mb-6 px-2 md:px-8 text-base md:text-lg leading-relaxed">
                     We’re always looking for curious minds, passionate coders, and tech problem-solvers. If you're eager
                     to
                     learn, grow, and make a difference in the tech world, we'd love to hear from you.
                 </p>
-            </div>
-        </div>
-
-        <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
-            <div class="max-w-3xl text-center">
-                <p class="mb-6 px-2 md:px-8 text-base md:text-lg leading-relaxed max-w-3xl text-center">
+                <p class="mb-6 px-2 md:px-8 text-base md:text-lg leading-relaxed max-w-3xl text-center text-justify">
                     <strong>Current Openings:</strong><br>
                     Intern – Web Development &amp; Dynamic Content<br>
                     Junior Java Developer (Coming soon)
                 </p>
-                <form action="/upload" method="POST" enctype="multipart/form-data"
+            </div>
+        </div>
+
+        <div class="flex-1 flex flex-col items-center px-4 py-10 md:py-20">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-luxury-navy mb-3 text-center">Upload Resume Here
+            </h2>
+            <div class="w-20 md:w-24 h-1 bg-[#d4af37] mb-6 md:mb-1-"></div>
+              <form action="/upload" method="POST" enctype="multipart/form-data"
                     class="flex flex-col items-center p-6 bg-gray-100 rounded-lg shadow-md w-full max-w-md mt-6 md:mt-10">
                     <h3 class="text-lg md:text-xl font-semibold mb-4 text-center">Submit Your Resume</h3>
 
@@ -262,7 +267,6 @@
                         Upload
                     </button>
                 </form>
-            </div>
         </div>
     </section>
 
