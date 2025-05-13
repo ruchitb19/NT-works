@@ -8,7 +8,9 @@ const path = require('path');
 const app = express();
 app.use(express.static("public"));
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin: 'http://127.0.0.1:5501'
+}));
 
 // ✅ Debug email env status
 console.log("Email User:", process.env.EMAIL_USER || "Not Loaded");
