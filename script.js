@@ -1,4 +1,21 @@
+// Clear the hash before the page unloads
+window.addEventListener("beforeunload", function () {
+    history.replaceState(null, null, window.location.pathname + window.location.search);
+    window.scrollTo(0, 0); // Scroll to top
+});
+
 document.addEventListener("DOMContentLoaded", function () {
+
+    setTimeout(() => {
+        if (window.location.hash) {
+            // Remove the hash from the URL
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+
+            // Scroll to top after hash jump
+            window.scrollTo(0, 0);
+        }
+    }, 0);
+
     AOS.init();
 
     var typed = new Typed("#typed-text", {
@@ -217,8 +234,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Javascript for Upload resume
-    const uploadButton = document.querySelector("button");
-    uploadButton.addEventListener("click", async function () {
+    const uploadButton = document.getElementById("uploadResumeBtn");
+    uploadButton.addEventListener("click", async function (e) {
+        e.preventDefault();
         const fileInput = document.getElementById("resumeFile");
         const file = fileInput.files[0];
 
@@ -231,7 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
         formData.append("resume", file);
 
         try {
-            const response = await fetch("http://localhost:5000/upload-resume", {
+            const response = await fetch("http://127.0.0.1:5000/upload-resume", {
                 method: "POST",
                 body: formData,
             });
